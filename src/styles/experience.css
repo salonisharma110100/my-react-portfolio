@@ -1,0 +1,110 @@
+.work-container {
+    color: white;
+    /* margin-top: 4rem; */
+    padding-top: 0;
+    /* top = 0 */
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    /* padding: 2rem 0; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.work-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #f0f0f0;
+}
+
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.project-card {
+    background-color: #1A0B2E;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 550px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(118, 60, 172, 0.4);
+    border-left: 5px solid #763CAC;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #763CAC;
+    margin-bottom: 0.5rem;
+}
+
+.project-client,
+.project-duration {
+    font-size: 0.9rem;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech-stack h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #763CAC;
+    margin-bottom: 0.5rem;
+}
+
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-pill {
+    background-color: #320F85;
+    /* Deeper purple for the pill background */
+    color: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+
+    .work-container {
+        grid-column: 2 / 3;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        gap: 2.5rem;
+    }
+
+    .project-card {
+        width: calc(50% - 1.25rem);
+        max-width: none;
+    }
+}
+
+@media (max-width: 899px) {
+    .work-container {
+        padding-top: 0px;
+    }
+}

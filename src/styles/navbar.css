@@ -1,0 +1,36 @@
+.nav-bar-container {
+    background-color: #1A0B2E;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #763CAC;
+}
+
+@media (min-width: 600px) {
+
+    .nav-bar-container {
+        justify-content: flex-end;
+    }
+
+    .nav-list-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,200 @@
+.project-description {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech-stack h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #763CAC;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-projects-container {
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem 1rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.portfolio-projects-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #f0f0f0;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+/* ----------------- IMAGE BOX (Mobile/Tablet) ----------------- */
+.project-image-box {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 3px solid #320F85;
+}
+
+.project-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ----------------- INFO BOX (Mobile/Tablet) ----------------- */
+.project-info-box {
+    display: block;
+    padding: 2rem;
+    background-color: #1A0B2E;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(18, 8, 38, 0.8);
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 5;
+}
+
+.project-info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(118, 60, 172, 0.4);
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 900px) {
+
+    .project-row {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6rem;
+        min-height: 350px;
+    }
+
+    /* IMAGE CARD */
+    .project-image-box {
+        flex: 0 0 55%;
+        max-width: 600px;
+        height: 320px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+        position: relative;
+        z-index: 1;
+        background-color: #1a0b2e;
+    }
+
+    .project-screenshot {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    /* DESCRIPTION CARD */
+    .project-info-box {
+        flex: 0 0 45%;
+        max-width: 450px;
+        height: 260px;
+        background-color: rgba(26, 11, 46, 0.98);
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 8px 25px rgba(18, 8, 38, 0.85);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+
+    /* DEFAULT: text card overlaps the image slightly (from left) */
+    .project-row .project-info-box {
+        left: 10%;
+        transform: translateX(-60%);
+    }
+
+    /* REVERSE: text card overlaps from the right side */
+    .project-row.reverse-row .project-info-box {
+        right: 10%;
+        left: auto;
+        transform: translateX(60%);
+    }
+
+    /* Hover effect */
+    .project-row:hover .project-info-box {
+        transform: scale(1.03) translateX(-60%);
+        box-shadow: 0 12px 45px rgba(118, 60, 172, 0.55);
+    }
+
+    .project-row.reverse-row:hover .project-info-box {
+        transform: scale(1.03) translateX(60%);
+    }
+}
+
+/* ...existing code... */
+
+@media (max-width: 899px) {
+
+    /* hide images on small screens */
+    .project-image-box,
+    .project-screenshot {
+        display: none !important;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+
+    /* let info cards take full width */
+    .project-info-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        position: relative;
+        transform: none !important;
+        box-shadow: 0 6px 18px rgba(18, 8, 38, 0.7);
+        text-align: left;
+    }
+
+    .project-row {
+        display: block;
+        min-height: auto;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+    .portfolio-projects-container {
+        grid-column: 2 / 3;
+    }
+}
