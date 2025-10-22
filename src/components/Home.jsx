@@ -1,6 +1,6 @@
 
 import "../styles/home.css";
-import image from "../images/image.png";
+import image from "../images/cartoon-image.png";
 
 const Home = () => {
     return (

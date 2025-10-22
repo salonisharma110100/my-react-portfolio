@@ -2,20 +2,21 @@ import '../styles/experience.css';
 
 const projects = [
     {
-        title: "Kindergarten Management System",
-        client: "Private Client / Educational Sector",
+        title: "Migration Project (PS/Wicket to React)",
+        client: "Tata Consultancy Services (TCS)",
         duration: "Jan 2024 - Present",
-        description: "Developed a full-stack application to streamline student enrollment, teacher assignments, and fee collection processes. Implemented a responsive React front-end with Redux for predictable state management.",
-        techStack: ["React", "Redux", "Node.js (API)", "PostgreSQL", "CSS Modules"]
+        description: "Led the migration of an enterprise application from PS/Wicket to React using Storybook. Converted legacy components, managed application state with Redux Toolkit, and boosted performance by 30%. Evaluated architecture, optimized dependencies, and improved maintainability.",
+        techStack: ["React", "Redux Toolkit", "Storybook", "JavaScript", "Material UI"]
     },
     {
-        title: "Insurance Policy Management Portal",
-        client: "Tata Consultancy Services (TCS)",
+        title: "Kindergarten Management System",
+        client: "Private Client / Educational Sector",
         duration: "Aug 2022 - Dec 2023",
-        description: "Built and maintained a high-security portal for insurance agents, featuring complex form validation and policy search functionalities. Focused on optimizing rendering performance and ensuring WCAG accessibility standards.",
-        techStack: ["React", "TypeScript", "Jest", "React Testing Library", "Styled Components"]
+        description: "Developed a preschool-focused web application from scratch using functional React components and Context API. Integrated Storybook for component-driven development, implemented Material UI for a responsive design, and delivered a consistent UI experience based on Figma designs. Followed Agile methodology and achieved 40% faster delivery.",
+        techStack: ["React", "Context API", "Storybook", "Material UI", "JavaScript", "Figma"]
     }
 ];
+
 
 const WorkExperience = () => {
     return (

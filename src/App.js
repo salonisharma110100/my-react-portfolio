@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import WorkExperience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import "./styles.css"; // Renamed the imported CSS file
+import "./styles.css";
 
 function App() {
   return (
@@ -12,12 +12,11 @@ function App() {
       <header className="main-header">
         <Navbar />
       </header>
-      {/* The main content wrapper */}
       <main className="section-container">
         <Home />
         <Skills />
-        <Projects />
         <WorkExperience />
+        <Projects />
         <Contact />
       </main>
     </>

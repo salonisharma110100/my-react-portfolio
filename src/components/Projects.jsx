@@ -1,22 +1,14 @@
 import '../styles/projects.css';
-import kindergartenImage from '../images/machine-coding.png';
-import insuranceImage from '../images/machine-coding.png';
+import kindergartenImage from '../images/machine-code.png';
 
 const projectDetails = [
     {
-        title: "Kindergarten Management System",
-        description: "A comprehensive full-stack application for educational clients, handling student profiles, fee collection, and staff management. Developed with a focus on intuitive CRUD operations and a responsive dashboard.",
-        tech: "React, Redux, Node.js, PostgreSQL",
+        title: "Machine Codes - React Mini Projects",
+        description: "A curated collection of React mini-projects demonstrating core frontend concepts such as state management, hooks, conditional rendering, form validation, API integration, and dynamic UI components.",
+        tech: "React, JavaScript, CSS",
         image: kindergartenImage,
-        liveLink: "https://your-kindergarten-demo.netlify.app"
+        liveLink: "https://machine-codes.netlify.app/"
     },
-    {
-        title: "Insurance Policy Management Portal",
-        description: "High-security portal developed for a major insurance client at TCS. Features include complex dynamic forms, advanced policy search, and strict adherence to WCAG accessibility guidelines.",
-        tech: "React, TypeScript, Jest/RTL, Styled Components",
-        image: insuranceImage,
-        liveLink: "https://your-insurance-demo.netlify.app"
-    }
 ];
 
 const Projects = () => {
@@ -25,12 +17,11 @@ const Projects = () => {
             <h2>Featured Projects</h2>
             <div className="projects-list">
                 {projectDetails.map((project, index) => (
-                    // Alternate the row order for a zig-zag effect (image left/right)
+
                     <div
                         key={index}
                         className={`project-row ${index % 2 !== 0 ? 'reverse-row' : ''}`}
                     >
-                        {/* LEFT/TEXT SIDE (Always Clickable) */}
                         <a
                             href={project.liveLink}
                             target="_blank"
@@ -43,7 +34,7 @@ const Projects = () => {
                             <span className="live-link-tag">View Live Project →</span>
                         </a>
 
-                        {/* RIGHT/IMAGE SIDE (Image Display) */}
+
                         <div className="project-image-box">
                             <img
                                 src={project.image}

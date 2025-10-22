@@ -82,7 +82,9 @@
     cursor: pointer;
 }
 
-
+.live-link-tag {
+    font-weight: bold;
+}
 
 
 @media (min-width: 900px) {
@@ -158,7 +160,6 @@
     }
 }
 
-/* ...existing code... */
 
 @media (max-width: 899px) {
 

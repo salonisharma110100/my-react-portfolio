@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
 
 
-const navList = ["Home", "Skills", "Projects", "Experience", "Contact"];
+const navList = ["Home", "Skills", "Experience", "Projects", "Contact"];
 
 const Navbar = () => {
 

@@ -3,7 +3,7 @@ import '../styles/contact.css';
 
 const contactInfo = [
     { name: "LinkedIn", icon: "🔗", link: "https://linkedin.com/in/saloni-sharma-3a99891b2" },
-    { name: "GitHub", icon: "🐈", link: "https://github.com/yourusername" }
+    { name: "GitHub", icon: "🐈", link: "https://github.com/salonisharma110100" }
 ];
 
 const Contact = () => {
