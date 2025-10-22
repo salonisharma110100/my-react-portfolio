@@ -15,7 +15,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Next Line */}
             <div className="about-text">
                 <h1>I'm a Software Engineer</h1>
                 <p>Currently, I am a software engineer at Tata Consultancy Services</p>

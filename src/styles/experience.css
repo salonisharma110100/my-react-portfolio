@@ -18,6 +18,7 @@
     font-weight: 700;
     margin-bottom: 3rem;
     color: #f0f0f0;
+    padding: 0.5rem;
 }
 
 
@@ -76,7 +77,6 @@
 
 .tech-pill {
     background-color: #320F85;
-    /* Deeper purple for the pill background */
     color: #f0f0f0;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;

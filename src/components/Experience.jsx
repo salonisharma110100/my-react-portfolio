@@ -10,7 +10,7 @@ const projects = [
     },
     {
         title: "Kindergarten Management System",
-        client: "Private Client / Educational Sector",
+        client: "Tata Consultancy Services (TCS)",
         duration: "Aug 2022 - Dec 2023",
         description: "Developed a preschool-focused web application from scratch using functional React components and Context API. Integrated Storybook for component-driven development, implemented Material UI for a responsive design, and delivered a consistent UI experience based on Figma designs. Followed Agile methodology and achieved 40% faster delivery.",
         techStack: ["React", "Context API", "Storybook", "Material UI", "JavaScript", "Figma"]
